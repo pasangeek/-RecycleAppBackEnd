@@ -1,6 +1,6 @@
-import { db } from "../recycle_db";
+import { db } from "../db.js";
 
-export const getUsers = (_, res) => {
+export const getItem = (_, res) => {
     const q = "SELECT * FROM item";
 
     db.query(q, (err, data) => {
